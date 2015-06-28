@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin,greek' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="../jquery.js"></script>
+    <script type="text/javascript" src="../popup.js"></script>
+    <style>
+      body {
+        background: #1D1D1D;
+        color: #FFF;
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 24px;
+        margin: 0 auto;
+        overflow-y: auto;
+      }
+
+      #mainPopup {
+        height: 180px;
+        width: 300px;
+        overflow: hidden;
+        overflow-y: auto;
+      }
+
+      #videos p {
+        margin: 0;
+        position: relative;
+      }
+
+      #videos p a.youtube-link {
+        display: block;
+        position: relative;
+      }
+
+      #videos p a.youtube-link img {
+        vertical-align: middle;
+      }
+
+      #videos p a.youtube-link .title {
+        background: rgba(0, 0, 0, 0.9);
+        bottom: 0;
+        color: #FFF;
+        font-size: 13px;
+        height: 30px;
+        line-height: 2.2;
+        margin: 0;
+        padding: 0 0 0 12px;
+        position: absolute;
+        text-decoration: none;
+        width: 100%;
+      }
+
+      #videos p a.grabber {
+        background: #FFE11A;
+        border-radius: 14px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        bottom: 0;
+        display: block;
+        height: 30px;
+        line-height: 1;
+        padding-left: 4px;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        width: 34px;
+      }
+
+      #videos p a.grabber img {
+        height: 24px;
+        vertical-align: middle;
+        width: 24px;
+      }
+
+      #videos:empty {
+        min-height: 175px;
+        position: relative;
+      }
+
+      #videos:empty:after {
+        content: "Δεν υπάρχουν διαθέσιμα Youtube videos σε αυτό τη σελίδα.";
+        line-height: 1.2;
+        position: absolute;
+          left: 50%; margin-left: -100px;
+          top: 50%; margin-top: -42px;
+        width: 200px; height: 84px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mainPopup">
+      <div id="videos"></div>
+    </div>
+  </body>
+</html>

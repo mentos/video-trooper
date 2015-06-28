@@ -1,0 +1,45 @@
+{
+  "manifest_version": 2,
+
+  "name": "TVXS Video Trooper",
+  "description": "TVXS Video Trooper. Δείτε όλα τα Youtube videos απευθείας στο Youtube χωρίς τις καθυστερήσεις και τις διαφημήσεις από τον video player του TVXS.gr.",
+  "version": "0.0.1",
+
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+
+  "permissions": [
+    "https://tvxs.gr/",
+    "http://tvxs.gr/",
+    "tabs",
+    "storage"
+  ],
+
+  "page_action": {
+    "default_title": "Υπάρχουν Youtube videos σε αυτή τη σελίδα",
+    "default_icon": "icons/icon19.png",
+    "default_popup": "popup.html"
+  },
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+
+  "content_scripts": [
+    {
+      "matches": [
+        "http://tvxs.gr/*",
+        "https://tvxs.gr/*"
+      ],
+
+      "js": [
+        "jquery.js",
+        "contentscript.js"
+      ]
+    }
+  ]
+}
