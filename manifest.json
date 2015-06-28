@@ -2,7 +2,8 @@
   "manifest_version": 2,
 
   "name": "TVXS Video Trooper",
-  "description": "TVXS Video Trooper. Δείτε όλα τα Youtube videos απευθείας στο Youtube χωρίς τις καθυστερήσεις και τις διαφημήσεις από τον video player του TVXS.gr.",
+  "description": "TVXS Video Trooper. Δείτε όλα τα Youtube videos απευθείας στο Youtube χωρίς τις διαφημήσεις από τον video player του TVXS.gr.",
+  "short_name": "TVXS Video Trooper",
   "version": "0.0.1",
 
   "icons": {
