@@ -4,7 +4,7 @@
   "name": "TVXS Video Trooper",
   "description": "TVXS Video Trooper. Δείτε όλα τα Youtube videos απευθείας στο Youtube χωρίς τις διαφημήσεις από τον video player του TVXS.gr.",
   "short_name": "TVXS Video Trooper",
-  "version": "0.0.1",
+  "version": "0.0.2",
 
   "icons": {
     "16": "icons/icon16.png",
